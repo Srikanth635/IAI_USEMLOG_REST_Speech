@@ -1,0 +1,221 @@
+2023-06-23 14:18:33:wordhoard.utilities.request_html:INFO: --------------------------------------------------------------------------------
+2023-06-23 14:18:33:wordhoard.utilities.request_html:INFO: The requested URL is protected by Cloudflare's DDoS mitigation service.
+2023-06-23 14:18:33:wordhoard.utilities.request_html:INFO: Requested URL: https://www.collinsdictionary.com/dictionary/english-thesaurus/life
+2023-06-23 14:18:33:wordhoard.utilities.request_html:INFO: --------------------------------------------------------------------------------
+2023-06-23 14:18:34:wordhoard.synonyms:ERROR: An AttributeError occurred in the following code segment:
+2023-06-23 14:18:34:wordhoard.synonyms:ERROR:   File "C:\Users\robcog\workspace\Malineni\PyCharmProjects\USemLoG_Python_REST\venv\lib\site-packages\wordhoard\synonyms.py", line 564, in _query_thesaurus_com
+    for list_item in word_container.find('ul').find_all('li'):
+
+2023-06-23 14:18:34:wordhoard.utilities.cloudflare_bypass:INFO: --------------------------------------------------------------------------------
+2023-06-23 14:18:34:wordhoard.utilities.cloudflare_bypass:INFO: Cloudflare DDoS mitigation service protection bypass successful.
+2023-06-23 14:18:34:wordhoard.utilities.cloudflare_bypass:INFO: Requested URL: https://www.collinsdictionary.com/dictionary/english-thesaurus/life
+2023-06-23 14:18:34:wordhoard.utilities.cloudflare_bypass:INFO: --------------------------------------------------------------------------------
+2023-06-23 14:18:46:wordhoard.utilities.request_html:INFO: --------------------------------------------------------------------------------
+2023-06-23 14:18:46:wordhoard.utilities.request_html:INFO: The requested URL is protected by Cloudflare's DDoS mitigation service.
+2023-06-23 14:18:46:wordhoard.utilities.request_html:INFO: Requested URL: https://www.collinsdictionary.com/dictionary/english-thesaurus/serve
+2023-06-23 14:18:46:wordhoard.utilities.request_html:INFO: --------------------------------------------------------------------------------
+2023-06-23 14:18:46:wordhoard.synonyms:ERROR: A KeyError occurred in the following code segment:
+2023-06-23 14:18:46:wordhoard.synonyms:ERROR:   File "C:\Users\robcog\workspace\Malineni\PyCharmProjects\USemLoG_Python_REST\venv\lib\site-packages\wordhoard\synonyms.py", line 638, in _query_wordnet
+    self._update_cache(part_of_speech_category, synonyms_list)
+  File "C:\Users\robcog\workspace\Malineni\PyCharmProjects\USemLoG_Python_REST\venv\lib\site-packages\wordhoard\synonyms.py", line 135, in _update_cache
+    caching.insert_word_cache_synonyms(self._word, pos_category, synonyms)
+  File "C:\Users\robcog\workspace\Malineni\PyCharmProjects\USemLoG_Python_REST\venv\lib\site-packages\wordhoard\utilities\caching.py", line 65, in insert_word_cache_synonyms
+    temporary_dict_synonyms[word][pos_category] += deduplicated_values
+
+2023-06-23 14:18:47:wordhoard.synonyms:ERROR: An AttributeError occurred in the following code segment:
+2023-06-23 14:18:47:wordhoard.synonyms:ERROR:   File "C:\Users\robcog\workspace\Malineni\PyCharmProjects\USemLoG_Python_REST\venv\lib\site-packages\wordhoard\synonyms.py", line 564, in _query_thesaurus_com
+    for list_item in word_container.find('ul').find_all('li'):
+
+2023-06-23 14:18:47:wordhoard.synonyms:ERROR: A KeyError occurred in the following code segment:
+2023-06-23 14:18:47:wordhoard.synonyms:ERROR:   File "C:\Users\robcog\workspace\Malineni\PyCharmProjects\USemLoG_Python_REST\venv\lib\site-packages\wordhoard\synonyms.py", line 490, in _query_synonym_com
+    self._update_cache(part_of_speech_category, synonyms_list)
+  File "C:\Users\robcog\workspace\Malineni\PyCharmProjects\USemLoG_Python_REST\venv\lib\site-packages\wordhoard\synonyms.py", line 135, in _update_cache
+    caching.insert_word_cache_synonyms(self._word, pos_category, synonyms)
+  File "C:\Users\robcog\workspace\Malineni\PyCharmProjects\USemLoG_Python_REST\venv\lib\site-packages\wordhoard\utilities\caching.py", line 65, in insert_word_cache_synonyms
+    temporary_dict_synonyms[word][pos_category] += deduplicated_values
+
+2023-06-23 14:18:47:wordhoard.utilities.cloudflare_bypass:INFO: --------------------------------------------------------------------------------
+2023-06-23 14:18:47:wordhoard.utilities.cloudflare_bypass:INFO: Cloudflare DDoS mitigation service protection bypass successful.
+2023-06-23 14:18:47:wordhoard.utilities.cloudflare_bypass:INFO: Requested URL: https://www.collinsdictionary.com/dictionary/english-thesaurus/serve
+2023-06-23 14:18:47:wordhoard.utilities.cloudflare_bypass:INFO: --------------------------------------------------------------------------------
+2023-06-23 14:19:04:wordhoard.utilities.request_html:INFO: --------------------------------------------------------------------------------
+2023-06-23 14:19:04:wordhoard.utilities.request_html:INFO: The requested URL is protected by Cloudflare's DDoS mitigation service.
+2023-06-23 14:19:04:wordhoard.utilities.request_html:INFO: Requested URL: https://www.collinsdictionary.com/dictionary/english-thesaurus/get%20lost
+2023-06-23 14:19:04:wordhoard.utilities.request_html:INFO: --------------------------------------------------------------------------------
+2023-06-23 14:19:04:wordhoard.utilities.request_html:INFO: --------------------------------------------------------------------------------
+2023-06-23 14:19:04:wordhoard.utilities.request_html:ERROR: Response Status Code: 404
+2023-06-23 14:19:04:wordhoard.utilities.request_html:INFO: The HTTP 404 Not Found status code means that the file or page that the was requested was not found on the server
+2023-06-23 14:19:04:wordhoard.utilities.request_html:INFO: Requested URL: https://www.merriam-webster.com/thesaurus/get%20lost
+2023-06-23 14:19:04:wordhoard.utilities.request_html:INFO: --------------------------------------------------------------------------------
+2023-06-23 14:19:04:wordhoard.synonyms:INFO: Merriam-webster.com had no synonym reference for the word get lost
+2023-06-23 14:19:04:wordhoard.synonyms:INFO: Wordnet had no synonym reference for the word get lost
+2023-06-23 14:19:04:wordhoard.synonyms:ERROR: An AttributeError occurred in the following code segment:
+2023-06-23 14:19:04:wordhoard.synonyms:ERROR:   File "C:\Users\robcog\workspace\Malineni\PyCharmProjects\USemLoG_Python_REST\venv\lib\site-packages\wordhoard\synonyms.py", line 564, in _query_thesaurus_com
+    for list_item in word_container.find('ul').find_all('li'):
+
+2023-06-23 14:19:05:wordhoard.utilities.request_html:INFO: --------------------------------------------------------------------------------
+2023-06-23 14:19:05:wordhoard.utilities.request_html:ERROR: Response Status Code: 404
+2023-06-23 14:19:05:wordhoard.utilities.request_html:INFO: The HTTP 404 Not Found status code means that the file or page that the was requested was not found on the server
+2023-06-23 14:19:05:wordhoard.utilities.request_html:INFO: Requested URL: https://www.synonym.com/synonyms/get%20lost
+2023-06-23 14:19:05:wordhoard.utilities.request_html:INFO: --------------------------------------------------------------------------------
+2023-06-23 14:19:05:wordhoard.synonyms:INFO: Synonym.com had no synonym reference for the word get lost
+2023-06-23 14:19:05:wordhoard.utilities.cloudflare_bypass:INFO: --------------------------------------------------------------------------------
+2023-06-23 14:19:05:wordhoard.utilities.cloudflare_bypass:INFO: Cloudflare DDoS mitigation service protection bypass successful.
+2023-06-23 14:19:05:wordhoard.utilities.cloudflare_bypass:INFO: Requested URL: https://www.collinsdictionary.com/dictionary/english-thesaurus/get lost
+2023-06-23 14:19:05:wordhoard.utilities.cloudflare_bypass:INFO: --------------------------------------------------------------------------------
+2023-06-23 14:22:03:wordhoard.utilities.request_html:INFO: --------------------------------------------------------------------------------
+2023-06-23 14:22:03:wordhoard.utilities.request_html:INFO: The requested URL is protected by Cloudflare's DDoS mitigation service.
+2023-06-23 14:22:03:wordhoard.utilities.request_html:INFO: Requested URL: https://www.collinsdictionary.com/dictionary/english-thesaurus/push
+2023-06-23 14:22:03:wordhoard.utilities.request_html:INFO: --------------------------------------------------------------------------------
+2023-06-23 14:22:03:wordhoard.synonyms:ERROR: A KeyError occurred in the following code segment:
+2023-06-23 14:22:03:wordhoard.synonyms:ERROR:   File "C:\Users\robcog\workspace\Malineni\PyCharmProjects\USemLoG_Python_REST\venv\lib\site-packages\wordhoard\synonyms.py", line 638, in _query_wordnet
+    self._update_cache(part_of_speech_category, synonyms_list)
+  File "C:\Users\robcog\workspace\Malineni\PyCharmProjects\USemLoG_Python_REST\venv\lib\site-packages\wordhoard\synonyms.py", line 135, in _update_cache
+    caching.insert_word_cache_synonyms(self._word, pos_category, synonyms)
+  File "C:\Users\robcog\workspace\Malineni\PyCharmProjects\USemLoG_Python_REST\venv\lib\site-packages\wordhoard\utilities\caching.py", line 65, in insert_word_cache_synonyms
+    temporary_dict_synonyms[word][pos_category] += deduplicated_values
+
+2023-06-23 14:22:04:wordhoard.utilities.cloudflare_bypass:INFO: --------------------------------------------------------------------------------
+2023-06-23 14:22:04:wordhoard.utilities.cloudflare_bypass:INFO: Cloudflare DDoS mitigation service protection bypass successful.
+2023-06-23 14:22:04:wordhoard.utilities.cloudflare_bypass:INFO: Requested URL: https://www.collinsdictionary.com/dictionary/english-thesaurus/push
+2023-06-23 14:22:04:wordhoard.utilities.cloudflare_bypass:INFO: --------------------------------------------------------------------------------
+2023-06-23 14:22:04:wordhoard.synonyms:ERROR: An AttributeError occurred in the following code segment:
+2023-06-23 14:22:04:wordhoard.synonyms:ERROR:   File "C:\Users\robcog\workspace\Malineni\PyCharmProjects\USemLoG_Python_REST\venv\lib\site-packages\wordhoard\synonyms.py", line 564, in _query_thesaurus_com
+    for list_item in word_container.find('ul').find_all('li'):
+
+2023-06-23 14:22:04:wordhoard.synonyms:ERROR: A KeyError occurred in the following code segment:
+2023-06-23 14:22:04:wordhoard.synonyms:ERROR:   File "C:\Users\robcog\workspace\Malineni\PyCharmProjects\USemLoG_Python_REST\venv\lib\site-packages\wordhoard\synonyms.py", line 490, in _query_synonym_com
+    self._update_cache(part_of_speech_category, synonyms_list)
+  File "C:\Users\robcog\workspace\Malineni\PyCharmProjects\USemLoG_Python_REST\venv\lib\site-packages\wordhoard\synonyms.py", line 135, in _update_cache
+    caching.insert_word_cache_synonyms(self._word, pos_category, synonyms)
+  File "C:\Users\robcog\workspace\Malineni\PyCharmProjects\USemLoG_Python_REST\venv\lib\site-packages\wordhoard\utilities\caching.py", line 65, in insert_word_cache_synonyms
+    temporary_dict_synonyms[word][pos_category] += deduplicated_values
+
+2023-06-23 14:22:24:wordhoard.utilities.request_html:INFO: --------------------------------------------------------------------------------
+2023-06-23 14:22:24:wordhoard.utilities.request_html:INFO: The requested URL is protected by Cloudflare's DDoS mitigation service.
+2023-06-23 14:22:24:wordhoard.utilities.request_html:INFO: Requested URL: https://www.collinsdictionary.com/dictionary/english-thesaurus/pull
+2023-06-23 14:22:24:wordhoard.utilities.request_html:INFO: --------------------------------------------------------------------------------
+2023-06-23 14:22:24:wordhoard.synonyms:ERROR: An AttributeError occurred in the following code segment:
+2023-06-23 14:22:24:wordhoard.synonyms:ERROR:   File "C:\Users\robcog\workspace\Malineni\PyCharmProjects\USemLoG_Python_REST\venv\lib\site-packages\wordhoard\synonyms.py", line 564, in _query_thesaurus_com
+    for list_item in word_container.find('ul').find_all('li'):
+
+2023-06-23 14:22:24:wordhoard.synonyms:ERROR: A KeyError occurred in the following code segment:
+2023-06-23 14:22:24:wordhoard.synonyms:ERROR:   File "C:\Users\robcog\workspace\Malineni\PyCharmProjects\USemLoG_Python_REST\venv\lib\site-packages\wordhoard\synonyms.py", line 638, in _query_wordnet
+    self._update_cache(part_of_speech_category, synonyms_list)
+  File "C:\Users\robcog\workspace\Malineni\PyCharmProjects\USemLoG_Python_REST\venv\lib\site-packages\wordhoard\synonyms.py", line 135, in _update_cache
+    caching.insert_word_cache_synonyms(self._word, pos_category, synonyms)
+  File "C:\Users\robcog\workspace\Malineni\PyCharmProjects\USemLoG_Python_REST\venv\lib\site-packages\wordhoard\utilities\caching.py", line 65, in insert_word_cache_synonyms
+    temporary_dict_synonyms[word][pos_category] += deduplicated_values
+
+2023-06-23 14:22:24:wordhoard.synonyms:ERROR: A KeyError occurred in the following code segment:
+2023-06-23 14:22:24:wordhoard.synonyms:ERROR:   File "C:\Users\robcog\workspace\Malineni\PyCharmProjects\USemLoG_Python_REST\venv\lib\site-packages\wordhoard\synonyms.py", line 490, in _query_synonym_com
+    self._update_cache(part_of_speech_category, synonyms_list)
+  File "C:\Users\robcog\workspace\Malineni\PyCharmProjects\USemLoG_Python_REST\venv\lib\site-packages\wordhoard\synonyms.py", line 135, in _update_cache
+    caching.insert_word_cache_synonyms(self._word, pos_category, synonyms)
+  File "C:\Users\robcog\workspace\Malineni\PyCharmProjects\USemLoG_Python_REST\venv\lib\site-packages\wordhoard\utilities\caching.py", line 65, in insert_word_cache_synonyms
+    temporary_dict_synonyms[word][pos_category] += deduplicated_values
+
+2023-06-23 14:22:24:wordhoard.utilities.cloudflare_bypass:INFO: --------------------------------------------------------------------------------
+2023-06-23 14:22:24:wordhoard.utilities.cloudflare_bypass:INFO: Cloudflare DDoS mitigation service protection bypass successful.
+2023-06-23 14:22:24:wordhoard.utilities.cloudflare_bypass:INFO: Requested URL: https://www.collinsdictionary.com/dictionary/english-thesaurus/pull
+2023-06-23 14:22:24:wordhoard.utilities.cloudflare_bypass:INFO: --------------------------------------------------------------------------------
+2023-06-23 14:22:45:wordhoard.utilities.request_html:INFO: --------------------------------------------------------------------------------
+2023-06-23 14:22:45:wordhoard.utilities.request_html:INFO: The requested URL is protected by Cloudflare's DDoS mitigation service.
+2023-06-23 14:22:45:wordhoard.utilities.request_html:INFO: Requested URL: https://www.collinsdictionary.com/dictionary/english-thesaurus/hold
+2023-06-23 14:22:45:wordhoard.utilities.request_html:INFO: --------------------------------------------------------------------------------
+2023-06-23 14:22:45:wordhoard.synonyms:ERROR: A KeyError occurred in the following code segment:
+2023-06-23 14:22:45:wordhoard.synonyms:ERROR:   File "C:\Users\robcog\workspace\Malineni\PyCharmProjects\USemLoG_Python_REST\venv\lib\site-packages\wordhoard\synonyms.py", line 638, in _query_wordnet
+    self._update_cache(part_of_speech_category, synonyms_list)
+  File "C:\Users\robcog\workspace\Malineni\PyCharmProjects\USemLoG_Python_REST\venv\lib\site-packages\wordhoard\synonyms.py", line 135, in _update_cache
+    caching.insert_word_cache_synonyms(self._word, pos_category, synonyms)
+  File "C:\Users\robcog\workspace\Malineni\PyCharmProjects\USemLoG_Python_REST\venv\lib\site-packages\wordhoard\utilities\caching.py", line 65, in insert_word_cache_synonyms
+    temporary_dict_synonyms[word][pos_category] += deduplicated_values
+
+2023-06-23 14:22:45:wordhoard.synonyms:ERROR: An AttributeError occurred in the following code segment:
+2023-06-23 14:22:45:wordhoard.synonyms:ERROR:   File "C:\Users\robcog\workspace\Malineni\PyCharmProjects\USemLoG_Python_REST\venv\lib\site-packages\wordhoard\synonyms.py", line 564, in _query_thesaurus_com
+    for list_item in word_container.find('ul').find_all('li'):
+
+2023-06-23 14:22:46:wordhoard.utilities.cloudflare_bypass:INFO: --------------------------------------------------------------------------------
+2023-06-23 14:22:46:wordhoard.utilities.cloudflare_bypass:INFO: Cloudflare DDoS mitigation service protection bypass successful.
+2023-06-23 14:22:46:wordhoard.utilities.cloudflare_bypass:INFO: Requested URL: https://www.collinsdictionary.com/dictionary/english-thesaurus/hold
+2023-06-23 14:22:46:wordhoard.utilities.cloudflare_bypass:INFO: --------------------------------------------------------------------------------
+2023-06-23 14:22:46:wordhoard.synonyms:ERROR: A KeyError occurred in the following code segment:
+2023-06-23 14:22:46:wordhoard.synonyms:ERROR:   File "C:\Users\robcog\workspace\Malineni\PyCharmProjects\USemLoG_Python_REST\venv\lib\site-packages\wordhoard\synonyms.py", line 490, in _query_synonym_com
+    self._update_cache(part_of_speech_category, synonyms_list)
+  File "C:\Users\robcog\workspace\Malineni\PyCharmProjects\USemLoG_Python_REST\venv\lib\site-packages\wordhoard\synonyms.py", line 135, in _update_cache
+    caching.insert_word_cache_synonyms(self._word, pos_category, synonyms)
+  File "C:\Users\robcog\workspace\Malineni\PyCharmProjects\USemLoG_Python_REST\venv\lib\site-packages\wordhoard\utilities\caching.py", line 65, in insert_word_cache_synonyms
+    temporary_dict_synonyms[word][pos_category] += deduplicated_values
+
+2023-06-23 14:24:45:wordhoard.utilities.request_html:INFO: --------------------------------------------------------------------------------
+2023-06-23 14:24:45:wordhoard.utilities.request_html:INFO: The requested URL is protected by Cloudflare's DDoS mitigation service.
+2023-06-23 14:24:45:wordhoard.utilities.request_html:INFO: Requested URL: https://www.collinsdictionary.com/dictionary/english-thesaurus/grasp
+2023-06-23 14:24:45:wordhoard.utilities.request_html:INFO: --------------------------------------------------------------------------------
+2023-06-23 14:24:45:wordhoard.synonyms:ERROR: A KeyError occurred in the following code segment:
+2023-06-23 14:24:45:wordhoard.synonyms:ERROR:   File "C:\Users\robcog\workspace\Malineni\PyCharmProjects\USemLoG_Python_REST\venv\lib\site-packages\wordhoard\synonyms.py", line 412, in _query_merriam_webster
+    self._update_cache(part_of_speech_category, synonyms_list)
+  File "C:\Users\robcog\workspace\Malineni\PyCharmProjects\USemLoG_Python_REST\venv\lib\site-packages\wordhoard\synonyms.py", line 135, in _update_cache
+    caching.insert_word_cache_synonyms(self._word, pos_category, synonyms)
+  File "C:\Users\robcog\workspace\Malineni\PyCharmProjects\USemLoG_Python_REST\venv\lib\site-packages\wordhoard\utilities\caching.py", line 65, in insert_word_cache_synonyms
+    temporary_dict_synonyms[word][pos_category] += deduplicated_values
+
+2023-06-23 14:24:45:wordhoard.synonyms:ERROR: A KeyError occurred in the following code segment:
+2023-06-23 14:24:45:wordhoard.synonyms:ERROR:   File "C:\Users\robcog\workspace\Malineni\PyCharmProjects\USemLoG_Python_REST\venv\lib\site-packages\wordhoard\synonyms.py", line 638, in _query_wordnet
+    self._update_cache(part_of_speech_category, synonyms_list)
+  File "C:\Users\robcog\workspace\Malineni\PyCharmProjects\USemLoG_Python_REST\venv\lib\site-packages\wordhoard\synonyms.py", line 135, in _update_cache
+    caching.insert_word_cache_synonyms(self._word, pos_category, synonyms)
+  File "C:\Users\robcog\workspace\Malineni\PyCharmProjects\USemLoG_Python_REST\venv\lib\site-packages\wordhoard\utilities\caching.py", line 65, in insert_word_cache_synonyms
+    temporary_dict_synonyms[word][pos_category] += deduplicated_values
+
+2023-06-23 14:24:45:wordhoard.utilities.cloudflare_bypass:INFO: --------------------------------------------------------------------------------
+2023-06-23 14:24:45:wordhoard.utilities.cloudflare_bypass:INFO: Cloudflare DDoS mitigation service protection bypass successful.
+2023-06-23 14:24:45:wordhoard.utilities.cloudflare_bypass:INFO: Requested URL: https://www.collinsdictionary.com/dictionary/english-thesaurus/grasp
+2023-06-23 14:24:45:wordhoard.utilities.cloudflare_bypass:INFO: --------------------------------------------------------------------------------
+2023-06-23 14:24:45:wordhoard.synonyms:ERROR: A KeyError occurred in the following code segment:
+2023-06-23 14:24:45:wordhoard.synonyms:ERROR:   File "C:\Users\robcog\workspace\Malineni\PyCharmProjects\USemLoG_Python_REST\venv\lib\site-packages\wordhoard\synonyms.py", line 329, in _query_collins_dictionary
+    self._update_cache(part_of_speech_category, synonyms_list)
+  File "C:\Users\robcog\workspace\Malineni\PyCharmProjects\USemLoG_Python_REST\venv\lib\site-packages\wordhoard\synonyms.py", line 135, in _update_cache
+    caching.insert_word_cache_synonyms(self._word, pos_category, synonyms)
+  File "C:\Users\robcog\workspace\Malineni\PyCharmProjects\USemLoG_Python_REST\venv\lib\site-packages\wordhoard\utilities\caching.py", line 65, in insert_word_cache_synonyms
+    temporary_dict_synonyms[word][pos_category] += deduplicated_values
+
+2023-06-23 14:24:46:wordhoard.synonyms:ERROR: An AttributeError occurred in the following code segment:
+2023-06-23 14:24:46:wordhoard.synonyms:ERROR:   File "C:\Users\robcog\workspace\Malineni\PyCharmProjects\USemLoG_Python_REST\venv\lib\site-packages\wordhoard\synonyms.py", line 564, in _query_thesaurus_com
+    for list_item in word_container.find('ul').find_all('li'):
+
+2023-06-23 14:25:01:wordhoard.utilities.request_html:INFO: --------------------------------------------------------------------------------
+2023-06-23 14:25:01:wordhoard.utilities.request_html:INFO: The requested URL is protected by Cloudflare's DDoS mitigation service.
+2023-06-23 14:25:01:wordhoard.utilities.request_html:INFO: Requested URL: https://www.collinsdictionary.com/dictionary/english-thesaurus/hold
+2023-06-23 14:25:01:wordhoard.utilities.request_html:INFO: --------------------------------------------------------------------------------
+2023-06-23 14:25:01:wordhoard.synonyms:ERROR: A KeyError occurred in the following code segment:
+2023-06-23 14:25:01:wordhoard.synonyms:ERROR:   File "C:\Users\robcog\workspace\Malineni\PyCharmProjects\USemLoG_Python_REST\venv\lib\site-packages\wordhoard\synonyms.py", line 412, in _query_merriam_webster
+    self._update_cache(part_of_speech_category, synonyms_list)
+  File "C:\Users\robcog\workspace\Malineni\PyCharmProjects\USemLoG_Python_REST\venv\lib\site-packages\wordhoard\synonyms.py", line 135, in _update_cache
+    caching.insert_word_cache_synonyms(self._word, pos_category, synonyms)
+  File "C:\Users\robcog\workspace\Malineni\PyCharmProjects\USemLoG_Python_REST\venv\lib\site-packages\wordhoard\utilities\caching.py", line 65, in insert_word_cache_synonyms
+    temporary_dict_synonyms[word][pos_category] += deduplicated_values
+
+2023-06-23 14:25:02:wordhoard.synonyms:ERROR: An AttributeError occurred in the following code segment:
+2023-06-23 14:25:02:wordhoard.synonyms:ERROR:   File "C:\Users\robcog\workspace\Malineni\PyCharmProjects\USemLoG_Python_REST\venv\lib\site-packages\wordhoard\synonyms.py", line 564, in _query_thesaurus_com
+    for list_item in word_container.find('ul').find_all('li'):
+
+2023-06-23 14:25:02:wordhoard.synonyms:ERROR: A KeyError occurred in the following code segment:
+2023-06-23 14:25:02:wordhoard.synonyms:ERROR:   File "C:\Users\robcog\workspace\Malineni\PyCharmProjects\USemLoG_Python_REST\venv\lib\site-packages\wordhoard\synonyms.py", line 638, in _query_wordnet
+    self._update_cache(part_of_speech_category, synonyms_list)
+  File "C:\Users\robcog\workspace\Malineni\PyCharmProjects\USemLoG_Python_REST\venv\lib\site-packages\wordhoard\synonyms.py", line 135, in _update_cache
+    caching.insert_word_cache_synonyms(self._word, pos_category, synonyms)
+  File "C:\Users\robcog\workspace\Malineni\PyCharmProjects\USemLoG_Python_REST\venv\lib\site-packages\wordhoard\utilities\caching.py", line 65, in insert_word_cache_synonyms
+    temporary_dict_synonyms[word][pos_category] += deduplicated_values
+
+2023-06-23 14:25:02:wordhoard.utilities.cloudflare_bypass:INFO: --------------------------------------------------------------------------------
+2023-06-23 14:25:02:wordhoard.utilities.cloudflare_bypass:INFO: Cloudflare DDoS mitigation service protection bypass successful.
+2023-06-23 14:25:02:wordhoard.utilities.cloudflare_bypass:INFO: Requested URL: https://www.collinsdictionary.com/dictionary/english-thesaurus/hold
+2023-06-23 14:25:02:wordhoard.utilities.cloudflare_bypass:INFO: --------------------------------------------------------------------------------
+2023-06-23 14:25:02:wordhoard.synonyms:ERROR: A KeyError occurred in the following code segment:
+2023-06-23 14:25:02:wordhoard.synonyms:ERROR:   File "C:\Users\robcog\workspace\Malineni\PyCharmProjects\USemLoG_Python_REST\venv\lib\site-packages\wordhoard\synonyms.py", line 329, in _query_collins_dictionary
+    self._update_cache(part_of_speech_category, synonyms_list)
+  File "C:\Users\robcog\workspace\Malineni\PyCharmProjects\USemLoG_Python_REST\venv\lib\site-packages\wordhoard\synonyms.py", line 135, in _update_cache
+    caching.insert_word_cache_synonyms(self._word, pos_category, synonyms)
+  File "C:\Users\robcog\workspace\Malineni\PyCharmProjects\USemLoG_Python_REST\venv\lib\site-packages\wordhoard\utilities\caching.py", line 65, in insert_word_cache_synonyms
+    temporary_dict_synonyms[word][pos_category] += deduplicated_values
+

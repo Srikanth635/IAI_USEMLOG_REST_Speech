@@ -1,0 +1,257 @@
+version: "3.1"
+
+nlu:
+- intent: pick_up
+  examples: |
+    - from the [wash basin]{"entity": "location", "role": "destination"} take out the [plate]{"entity": "utensil", "role": "target"}.
+    - grasp the handle of the [knife]{"entity": "utensil", "role": "target"} firmly.
+    - from the [island area]{"entity": "location", "role": "destination"}, snatch the [knife]{"entity": "utensil", "role": "target"}.
+    - grab the [cup]{"entity": "utensil", "role": "target"}.
+    - you can grasp a [fruit]{"entity": "food", "role": "target"}.
+    - go to the [table]{"entity": "location", "role": "destination"} and pick up the [tin]{"entity": "utensil", "role": "target"} from it.
+    - grab a [spatula]{"entity": "utensil", "role": "target"} from the [rack]{"entity": "location", "role": "destination"}.
+    - get a slotted [spoon]{"entity": "utensil", "role": "target"} from the [cooking pot]{"entity": "location", "role": "destination"}.
+    - pick up the [fork]{"entity": "utensil", "role": "target"} lying on the [floor]{"entity": "location", "role": "destination"}.
+    - can you grab a [fork]{"entity": "utensil", "role": "target"} from the [dish washer]{"entity": "location", "role": "destination"}?
+    - from the [drawer]{"entity": "location", "role": "destination"}, take a [bowl]{"entity": "utensil", "role": "target"}.
+    - take hold of the [spatula]{"entity": "utensil", "role": "target"} present near the [stove]{"entity": "location", "role": "destination"}.
+    - select a [whisker]{"entity": "utensil", "role": "target"} from the [drawer]{"entity": "location", "role": "destination"}.
+    - take the [can opener]{"entity": "utensil", "role": "target"} from the [table]{"entity": "location", "role": "destination"}.
+    - can you get hold of the [plate]{"entity": "utensil", "role": "target"}?
+    - would you mind picking a [knife]{"entity": "utensil", "role": "target"}?
+    - fetch the [cup]{"entity": "utensil", "role": "target"} from the [drawer]{"entity": "location", "role": "destination"}.
+    - could you fetch the [scissor]{"entity": "utensil", "role": "target"} on the [rack]{"entity": "location", "role": "destination"}? 
+    - could you grab a [ladle]{"entity": "utensil", "role": "target"} from the [utensil holder]{"entity": "location", "role": "destination"}?
+    - would you kindly pick up a [peeler]{"entity": "utensil", "role": "target"}? 
+    - pick up the [glass]{"entity": "utensil", "role": "target"}.
+    - get hold of the [knife]{"entity": "utensil", "role": "target"} tightly.
+    - take hold of the [casserole]{"entity": "utensil", "role": "target"} from the [stove]{"entity": "location", "role": "destination"}.
+    - pick the [bottle]{"entity": "utensil", "role": "target"} from the [fridge]{"entity": "location", "role": "destination"}.
+    - take the [oil] available just by the [stove]{"entity": "location", "role": "destination"}.
+    - obtain the baked [bread]{"entity": "food", "role": "target"} in the [oven]{"entity": "location", "role": "destination"}.
+    - from the [storage container]{"entity": "location", "role": "destination"} pick the [vegetables]{"entity": "food", "role": "target"}.
+    - can you grab a [sausage]{"entity": "food", "role": "target"} from the [plate]{"entity": "location", "role": "destination"}?
+    - could you be able to get the [apple]{"entity": "food", "role": "target"} located near the [fridge]{"entity": "location", "role": "destination"}?
+    - beside the [stove]{"entity": "location", "role": "destination"} there is an [orange]{"entity": "food", "role": "target"}, could you please grab it.
+    - on top of the [refrigerator]{"entity": "location", "role": "destination"} you can find a [potato]{"entity": "food", "role": "target"}, try to take it.
+
+- intent: put_down
+  examples: |
+    - rest the [slotted spoon]{"entity": "utensil", "role": "target"} on the edge of the [pot]{"entity": "location", "role": "destination"}.
+    - place the [grater]{"entity": "utensil", "role": "target"} in the [sink]{"entity": "location", "role": "destination"}.
+    - could you stow the [cooking pot]{"entity": "utensil", "role": "target"} near the [sink]{"entity": "location", "role": "destination"}?
+    - put the [spatula]{"entity": "utensil", "role": "target"} down on the [plate]{"entity": "location", "role": "destination"}.
+    - ground the [kitchen shears]{"entity": "utensil", "role": "target"} on the [cutting board]{"entity": "location", "role": "destination"}.
+    - carefully let go of the [knife]{"entity": "utensil", "role": "target"} into the [wash basin]{"entity": "location", "role": "destination"}.
+    - leave the [cup]{"entity": "utensil", "role": "target"} on the [table]{"entity": "location", "role": "destination"}.
+    - slowly let the [ladle]{"entity": "utensil", "role": "target"} fall back into the [pot]{"entity": "location", "role": "destination"}.
+    - deposit the [whisk]{"entity": "utensil", "role": "target"} into the [utensil holder]{"entity": "location", "role": "destination"}.
+    - station the [cup]{"entity": "utensil", "role": "target"} in the [dish washer]{"entity": "location", "role": "destination"}.
+    - place the [plate]{"entity": "utensil", "role": "target"} over the [oven]{"entity": "location", "role": "destination"}.
+    - drop the [spoon]{"entity": "utensil", "role": "target"} on the [plate]{"entity": "location", "role": "destination"}.
+    - would you mind placing the [cup]{"entity": "utensil", "role": "target"} onto the [saucer]{"entity": "location", "role": "destination"}?
+    - can you leave the [bowl]{"entity": "utensil", "role": "target"} on the [table]{"entity": "location", "role": "destination"} gently.
+    - could you place the [pan]{"entity": "utensil", "role": "target"} on the [stove]{"entity": "location", "role": "destination"}?
+    - drop the [chopped vegetables]{"entity": "utensil", "role": "target"} into the [cooking pot]{"entity": "location", "role": "destination"}.
+    - set the [lid]{"entity": "utensil", "role": "target"} on the [cooking pan]{"entity": "location", "role": "destination"}.
+    - stow the [vegetable]{"entity": "food", "role": "target"} on the [cutting board]{"entity": "location", "role": "destination"}.
+    - can you leave the [milk bottle]{"entity": "utensil", "role": "target"} near the [fridge]{"entity": "location", "role": "destination"}?
+    - you can place the [apple]{"entity": "food", "role": "target"} on the [table]{"entity": "location", "role": "destination"}.
+    - you could deposit the [saltshaker]{"entity": "utensil", "role": "target"} on the [desk]{"entity": "location", "role": "destination"}.
+
+- intent: drop
+  examples: |
+    - get rid off the [mixer]{"entity": "utensil", "role": "target"}.
+    - let go of the [ladle]{"entity": "utensil", "role": "target"}.
+    - can you drop off the [fork]{"entity": "utensil", "role": "target"}?
+    - drop the [spoon]{"entity": "utensil", "role": "target"} in the [dish washer]{"entity": "location", "role": "destination"}.
+    - release the [bottle]{"entity": "utensil", "role": "target"}.
+    - discard the [fork]{"entity": "utensil", "role": "target"}.
+    - ditch the [bottle]{"entity": "utensil", "role": "target"}.
+    - disengage your hand from the [can opener]{"entity": "utensil", "role": "target"}.
+    - untether your grip from the [grater]{"entity": "utensil", "role": "target"}.
+    - free your hold on the [kitchen shears]{"entity": "utensil", "role": "target"}.
+    - unclasp your fingers from the [peeler]{"entity": "utensil", "role": "target"}.
+    - unhand the [whisk]{"entity": "utensil", "role": "target"}.
+    - dump the [colander]{"entity": "utensil", "role": "target"}.
+
+- intent: move
+  examples: |
+    - could you relocate the [blender]{"entity": "utensil", "role": "target"} to the [countertop]{"entity": "location", "role": "destination"}?
+    - kindly transfer the [cutting board]{"entity": "utensil", "role": "target"} to the [kitchen island]{"entity": "location", "role": "destination"}.
+    - could you shift the [spices]{"entity": "food", "role": "target"} to the [spice rack]{"entity": "location", "role": "destination"}?
+    - please transport the [coffee machine]{"entity": "utensil", "role": "target"} to the [kitchen counter]{"entity": "location", "role": "destination"}.
+    - kindly carry the [orange]{"entity": "food", "role": "target"} to the [kitchen island]{"entity": "location", "role": "destination"}.
+    - could you carry the [vegetables]{"entity": "food", "role": "target"} tray to the [refrigerator]{"entity": "location", "role": "destination"}?
+    - please reposition the [plates]{"entity": "utensil", "role": "target"} to the [dishwasher]{"entity": "location", "role": "destination"}.
+    - on to the [cutting board]{"entity": "location", "role": "destination"} carry the [knife]{"entity": "utensil", "role": "target"}.
+    - please move the [pan]{"entity": "utensil", "role": "target"} to the [storage area]{"entity": "location", "role": "destination"}.
+    - can you carry the [plate]{"entity": "utensil", "role": "target"} to the [sink]{"entity": "location", "role": "destination"}?
+    - carry the [cup]{"entity": "utensil", "role": "target"} to the [washbasin]{"entity": "location", "role": "destination"}.
+    - cart the [bottle]{"entity": "utensil", "role": "target"} to the [refrigerator]{"entity": "location", "role": "destination"}.
+    - carefully lug the [bowl]{"entity": "utensil", "role": "target"} towards the [stove]{"entity": "location", "role": "destination"}.
+    - move it near to the [table]{"entity": "location", "role": "destination"}.
+    - carry the [mug]{"entity": "utensil", "role": "target"} over to the [island area]{"entity": "location", "role": "destination"}.
+    - move the [cutting board]{"entity": "utensil", "role": "target"} near to the [dishwasher]{"entity": "location", "role": "destination"}.
+
+- lookup: utensil
+  examples: |
+    - cup
+    - spoon
+    - fork
+    - knife
+    - ladle
+    - spatula
+    - casserole
+    - whisk
+    - colander
+    - grater
+    - masher
+    - peeler
+    - bowl
+    - plate
+    - pan
+    - mixer
+    - saltshaker
+    - scissor
+
+- lookup: location
+  examples: |
+    - oven
+    - table
+    - floor
+    - island area
+    - island
+    - fridge
+    - holder
+    - washbasin
+    - dishwasher
+    - sink
+    - rack
+
+- lookup: food
+  examples: |
+    - fruit
+    - orange
+    - apple
+    - mango
+    - strawberry
+    - berries
+    - berry
+    - vegetable
+    - carrot
+    - potato
+    - tomato
+    - cucumber
+    - onion
+    - beans
+    - spinach
+    - milk
+    - cheese
+    - butter
+
+- synonym: spoon
+  examples: |
+    - slotted spoon
+
+- synonym: fridge
+  examples: |
+    - freezer
+    - refrigerator
+
+- synonym: island_area
+  examples: |
+    - island
+
+- synonym: oven
+  examples: |
+    - microwave
+
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
