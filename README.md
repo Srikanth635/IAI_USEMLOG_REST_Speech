@@ -1,9 +1,9 @@
 # Speech To Text Transcription in Unreal Engine (RobCoG VR)
 
 ## Different Approaches
-* [Sphinx Based Plugin](https://github.com/Srikanth635/IAI_USEMLOG_REST_Speech/edit/master/README.md#sphinx-based-plugin)
-* [Whisper Speech-to-Text Unreal Engine Plugin](https://github.com/Srikanth635/IAI_USEMLOG_REST_Speech/edit/master/README.md#whisper-speech-to-text-unreal-engine-plugin)
-* [REST API (Unreal Engine) – Flask](https://github.com/Srikanth635/IAI_USEMLOG_REST_Speech/edit/master/README.md#rest-api-unreal-engine--flask)
+* Sphinx Based Plugin
+* Whisper Speech-to-Text Unreal Engine Plugin
+* REST API (Unreal Engine) – Flask
 
 
 <h2>Sphinx Based Plugin</h2>
@@ -49,7 +49,7 @@ _Libraries Used_:
   * Concurrency : thread, mutex, atomic
 
 <p align="center">
-  <img width="400" src="Documentation/Whisper_plugin_build.jpg" alt="Whisper_plugin_build.jpg">
+  <img width="800" src="Documentation/Whisper_plugin_build.jpg" alt="Whisper_plugin_build.jpg">
 </p>
 <b><p align="center">Fig. Code snippet inside Build.cs of speech-to-text unreal engine plugin</p></b>
 
@@ -59,7 +59,7 @@ Inside 'SpeechRecognition\Source\SpeechRecognition\Private\ MySpeechWorker ', fu
 Processed audio is passed on to  whisper network to get transcripted text as output.
 
 <p align="center">
-  <img width="400" src="Documentation/Whisper_plugin_blueprint.jpg" alt="Whisper_plugin_blueprint.jpg">
+  <img width="800" src="Documentation/Whisper_plugin_blueprint.jpg" alt="Whisper_plugin_blueprint.jpg">
 </p>
 <b><p align="center">Fig. Code snippet to retrieve audio buffer and invoke whisper for transcriptions</p></b>
 
@@ -82,6 +82,14 @@ GIT (Flask Python file) : [../IAI_USEMLOG_REST_Speech/blob/master/voice.py](http
 * _Unreal REST API_ :
   * Used Unreal engine’s C++ HTTP modules to raise API requests (start and stop recordings)
   * Used parsing libraries (JSON) to parse the received response from flask
+ 
+* _VR Motion Controller Mappings_ :
+
+  <p align="center">
+    <img width="400" src="Documentation/SL_Logger.PNG" alt="SL_Logger.PNG">
+    <img width="400" src="Documentation/SL_Logger_inputs.PNG" alt="SL_Logger_inputs.PNG">
+  </p>
+  <b><p align="center">Fig. (a) Params in SL_LoggerManager used to map inputs (b) VR Trackpad buttons mapped as inputs to params in project_settings/inputs</p></b>
 
 _Libraries and Tools Used_ : 
   * Unreal Engine (4.27,5.1.1)
@@ -120,5 +128,24 @@ _Libraries and Tools Used_ :
 </p>
 <b><p align="center">Fig. Code snippet of function to send stop audio signal API request</p></b>
 
+<h2>Usage</h2>
+
+* Out of 3 approaches mentioned above, third approach i.e., `REST API (Unreal Engine) – Flask` performance is satisfactory
+* Steps to follow:
+  * Get the updated USemLog plugin with speech scripts available into the unreal engine project
+  * Inside PyCharm open and install all the packages used in `voice.py` script
+  * Then run the flask application `voice.py` script in local host server
+  * Can check the server status inside a POSTMAN plugin on chrome using the local host server URL
+  * Flask application is listening for API requests
+  * Start the RobCoG project
+  * Use the VR controllers to start and stop audio recordings
+  * Click the right controller trackpad down button to raise an API request, to start the audio recording
+  * User should start speaking
+  * Running Flask applcation receives the request and starts recording the user utterances
+  * Click the left controller trackpad down button to raise an API request, to stop the audio recording
+  * OR the recording also gets stopped when the unreal game gets ended
+  * Upon stop request, the flask application finishes recording and saves the audio in .wav file and invokes whisper package for transcriptions
+  * The transcriptions are then formatted to JSON and are passed back to RobCoG and displayed to the user.
+ 
 
   
